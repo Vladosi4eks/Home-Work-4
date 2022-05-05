@@ -210,6 +210,8 @@ img {
     font-family: inherit;
     text-align: center;
     border: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .section-hero {
@@ -569,6 +571,17 @@ img {
 .portfolio-button:focus {
     background-color: var(--blue-color);
     color: var(--whtie-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.portfolio-body .kartochki-link {}
+
+.kartochki-link:hover,
+.kartochki-link:focus {
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
@@ -583,7 +596,11 @@ img {
 
 .card li {
     flex-basis: calc((100% - 90px) / 3);
-    margin: 15px;
+    margin: 15px
+}
+
+.card li:nth-child(3n) {
+    margin-right: 0;
 }
 
 
